@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    
+}
+
+header{
+height: 90px;
+display: flex;
+justify-content: space-around;
+align-items: center;
+background-color:#1e2838;
+}
+
+nav{
+    width: 60%;
+}
+
+ul{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+li{
+    list-style: none;
+    color: #00b1cb;
+    cursor: pointer;
+    font-size: 19px;
+    transition: .5s;
+    font-family:'Kdam Thmor Pro', sans-serif; 
+}
+
+li:hover{
+    color: yellow;
+
+}
+
+#logo{
+width: 160px;
+height: auto;
+}
+
+body{
+    background-color:#262c3a;
+}
+.fotosdosatores{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+.cardsfotos{
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    row-gap: 20px;
+    column-gap: 40px;
+}
+.card{
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 1s;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 0 20px 10px;
+    color: 	#107361;
+    font-weight: bold;
+    font-size: 22px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+.card:hover{
+    transform: scale(1.04);
+}
+
+.banner1{
+    background-image: url('https://i0.wp.com/cloud.estacaonerd.com/wp-content/uploads/2023/10/28190304/RICK-AND-MORTY.jpg?fit=1920%2C1080&ssl=1');
+}
+
+.banner2{
+    background-image: url('https://comicvine.gamespot.com/a/uploads/scale_small/6/66303/4469088-tumblr_inline_n0aleph3fl1r8rr6o.jpg');
+}
+
+.banner3{
+    background-image: url('https://static.wikia.nocookie.net/ultimatepopculture/images/e/ee/Rick_and_Morty_characters_-_Summer_Smith.jpg/revision/latest?cb=20210628141730');
+}
+
+.banner4{
+    background-image: url('https://static.wikia.nocookie.net/rickandmorty/images/5/58/Beth_Smith.png/revision/latest?cb=20231221010211');
+}
+
+.banner5{
+    background-image: url('https://static.wikia.nocookie.net/rickandmorty/images/f/f1/Jerry_Smith.png/revision/latest?cb=20160923151111');
+}
+
+.banner6{
+    background-image: url('https://i.ebayimg.com/images/g/1TgAAeSwtppp5qLP/s-l1200.jpg');
+}
+
+
+footer{
+    height: 300px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+span{
+    color: #fff;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+#logofooter{
+    width: 200px;
+    height: auto;
+    }
+
+.navmobile{
+    display: none;
+}
+
+.navmobile1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+@media (max-width:768px){
+    .cardsfotos{ 
+        grid-template-columns: 1fr
+    }
+    
+    .navmobile{
+        display: block;
+    }
+    
+    nav{
+        display: none;
+    }
+    
+    
+    #logo{
+        width: 160px;
+        height: auto;
+        }
+    
+}
+    
